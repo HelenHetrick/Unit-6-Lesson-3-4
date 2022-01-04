@@ -8,5 +8,28 @@ for(int i = 0; i<words2.length; i++)
   String last = words2[i].substring(words2[i].length()-1);
   System.out.println("Index Value "+i+": "+words2[i]+" "+first+" "+last);
 }
+
+int[] nums={12,65,80,70,34,22};
+
+for(int i=nums.length-1; i>3; i--)
+{
+nums[i]=nums[i-1];
+}
+nums[3] = 99;
+for (int i=0; i<nums.length;i++)
+{
+  System.out.println(nums[i]+" ");
+}
+
+for(int i = 2; i<nums.length-1; i++)
+{
+  nums[i]=nums[i+1];
+}
+for (int i=0; i<nums.length;i++)
+{
+  System.out.print(nums[i]+" ");
+}
+
+
   }
 }
