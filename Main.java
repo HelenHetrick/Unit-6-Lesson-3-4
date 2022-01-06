@@ -31,5 +31,51 @@ for (int i=0; i<nums.length;i++)
 }
 
 
+//Shift to the left
+System.out.println();
+int[] nums2={1, 2, 3, 4};
+int temp=nums2[0];
+for(int i = 0; i<nums2.length-1;i++)
+{
+  nums2[i] = nums2[i+1];
+}
+nums2[nums2.length-1]=temp;
+
+for (int i=0; i<nums2.length;i++)
+{
+  System.out.print(nums2[i]+" ");
+}
+
+
+//Shift to the right
+System.out.println();
+int temp2=nums2[nums2.length-1];
+for(int i = nums2.length-1; i>0; i--)
+{
+  nums2[i] = nums2[i-1];
+}
+nums2[0]=temp2;
+
+for (int i=0; i<nums2.length;i++)
+{
+  System.out.print(nums2[i]+" ");
+}
+
+//reversin elements using swap inside of for loop
+System.out.println();
+
+for (int i=0; i<nums2.length/2;i++)
+{
+int j=nums2.length-i-1;
+int temp3 = nums2[i];
+nums2[i]=nums2[j];
+nums2[j]=temp3;
+}
+
+for (int i=0; i<nums2.length;i++)
+{
+  System.out.print(nums2[i]+" ");
+}
+
   }
 }
