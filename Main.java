@@ -1,6 +1,24 @@
 class Main {
   public static void main(String[] args) {
     String words2[]= {"apple", "banana", "peach", "cherries", "blueberries"};
+//for-each
+for(String fruit:words2)
+{
+  System.out.println(fruit);
+}
+
+//for-each print only fruits with length of 5
+for(String fruit:words2)
+{
+  if(fruit.length()==5)
+  {
+  System.out.println(fruit);
+
+  }
+}
+
+
+
 
 for(int i = 0; i<words2.length; i++)
 {
@@ -10,6 +28,17 @@ for(int i = 0; i<words2.length; i++)
 }
 
 int[] nums={12,65,80,70,34,22};
+int sum = 0;
+for(int x:nums)
+{
+  sum+=x;
+}
+System.out.print("The average of nums is ");
+
+System.out.printf("%.2f%n",((double)sum/nums.length));
+
+
+
 
 for(int i=nums.length-1; i>3; i--)
 {
